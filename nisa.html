@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<body>
+	<style>
+table, td  {
+  border: 1px solid grey;
+  border-collapse: collapse;
+  padding: 5px;
+}
+</style>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/danialfarid-angular-file-upload/12.2.13/ng-file-upload.min.js"></script>
+<script type="text/javascript">
+    var app = angular.module('MyApp', ['ngFileUpload'])
+    app.controller('MyController', function ($scope, $window,$http) {
+        $scope.SelectFile = function (file) {
+            $scope.SelectedFile = file;
+        };
+        $scope.Upload = function () {
+            var regex = /^([a-zA-Z0-9\s_\\.\-:])+(.csv|.txt)$/;
+            if (regex.test($scope.SelectedFile.name.toLowerCase())) {
+                if (typeof (FileReader) != "undefined") {
+                    var reader = new FileReader();
+                    reader.onload = function (e) {
+                        var customers = new Array();
+                        var rows = e.target.result.split("\r\n");
+                        for (var i = 0; i < rows.length; i++) {
+                            var cells = rows[i].split(",");
+                            if (cells.length > 1) {
+                                var customer = {};
+                                customer.issueKey = cells[0];
+                                customer.issueId = cells[1];
+                                customer.priority = cells[2];
+                                customer.summary = cells[4];
+                                customer.issuetype = cells[5];
+                                customer.assignee = cells[8];
+                                customers.push(customer);
+                                $scope.$apply(function () {
+                                    $scope.Customers = customers;
+                                    $scope.IsVisible = true;
+                                });
+                            }
+                        }
+ 
+                    }
+                    reader.readAsText($scope.SelectedFile);
+                } else {
+                    $window.alert("This browser does not support HTML5.");
+                }
+            } else {
+                $window.alert("Please upload a valid CSV file.");
+            }
+        }
+
+            $scope.isDisabled = false;
+            $scope.isnotDisabled = true;
+            $scope.Results = " ";
+          
+
+    $scope.result = function(){
+        $scope.Results = "Extent Report";
+        	$http({
+    		method : 'GET',
+    		url : 'http://localhost:8082/greeting'
+			}).
+        then(function(response) {
+            $scope.greeting = response.data;
+        } , function(error){ console.log(error);
+        });
+    }
+	$scope.save = function(){
+		
+  		$scope.mNameArray = [];
+  		
+  		
+
+  		angular.forEach($scope.Customers, function(m){
+    	if (!!m.selected)
+    	{ $scope.mNameArray.push(m.issueKey);
+    
+    		$http({
+    		method : 'GET',
+    		url : 'http://localhost:8383/mapping?name='+ m.issueKey
+			}).
+        then(function(response) {
+            
+         
+        } , function(error){ console.log(error);
+        });
+        
+    	}
+    	
+  		});
+
+         $http({
+    		method : 'GET',
+    		url : 'http://localhost:8081/runtest'
+			}).
+        then(function(response) {
+            
+         
+        } , function(error){ console.log(error);
+        });
+ 
+        $scope.isDisabled = true;
+         $scope.isnotDisabled = false;
+
+	}
+
+    });
+</script>
+
+<div ng-app = "MyApp" ng-controller = "MyController">
+    <input type = "file" ngf-select = "SelectFile($file)" />
+    <input type = "button" value = "Upload" ng-click = "Upload()" />
+    <hr />
+
+    Search:
+    <input type="text" ng-model = "Search"><br><br>
+    <table id = "tblCustomers" cellpadding = "10" cellspacing = "10" ng-show = "IsVisible" >                
+        <tbody ng-repeat = "m in Customers|filter:Search">
+        	<tr>
+        	        <td ng-if="$odd" style="background-color:#f1f1f1"><input type = "checkbox" ng-model = "m.selected" value = {{m.issueKey}}>{{m.issueKey}}</td>
+        	       	<td ng-if="$even">
+					<input type = "checkbox" ng-model = "m.selected" value = {{m.issueKey}}>{{m.issueKey}}</td>
+
+                   	<td ng-if="$odd" style="background-color:#f1f1f1">{{m.issueId}}</td>
+                   	<td ng-if="$even">{{m.issueId}}</td>
+
+                    <td ng-if="$odd" style="background-color:#f1f1f1">{{m.priority}}</td>
+                   	<td ng-if="$even">{{m.priority}}</td>
+
+                   	<td ng-if="$odd" style="background-color:#f1f1f1">{{m.issuetype}}</td>
+                   	<td ng-if="$even">{{m.issuetype}}</td>
+
+            		<td ng-if="$odd" style="background-color:#f1f1f1">{{m.summary}}</td>
+                  	<td ng-if="$even">{{m.summary}}</td>
+
+                  	<td ng-if="$odd" style="background-color:#f1f1f1">{{m.assignee}}</td>
+                   	<td ng-if="$even">{{m.assignee}}</td>
+
+            </tr>
+        </tbody>
+    </table>
+
+    <br>
+    <br>
+
+    <input type = "button" value = "Submit" ng-click="save()" ng-disabled="isDisabled">
+   
+    <input type = "button" value = "Results" ng-click="result()" ng-disabled="isnotDisabled">
+
+	<p><a href="{{greeting.url}}" target="_blank">{{Results}}</a></p>
+	
+
+	
+</div>
+
+</body>
+</html>
