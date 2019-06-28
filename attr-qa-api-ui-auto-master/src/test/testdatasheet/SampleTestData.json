@@ -1,0 +1,14 @@
+{
+  "testdata" : [
+    {
+      "ContentType": "application/json",
+      "Email": "test@abc.com",
+      "ExpectedResponse" : "room.name:Barcelona"
+    },
+    {
+      "ContentType": "application/json",
+      "Email": "test@xyz.com",
+      "ExpectedResponse" : "room.name:Arsenal"
+    }
+  ]
+}

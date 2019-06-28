@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <parameter name="env" value="" />
+  <parameter name="properties" value="nielsen"></parameter>
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="attrqa.optimusprime.Mar19Release.api.Test_Optimus_BubbleChart"> </class>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

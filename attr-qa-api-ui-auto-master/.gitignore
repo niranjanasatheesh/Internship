@@ -1,0 +1,17 @@
+/.idea/*
+/google_tokens/*
+/test-output/*
+/build/*
+/target/*
+/test/java/svb/*
+/reports/*
+src/main/java/attrqa/framework/viewmodels/response/svb/*
+src/test/java/svb/*
+/*.html
+/*.txt
+/*.xml
+/*.iml
+src/test/testdatasheet/~$*.xlsx
+!/pom.xml
+!/testng.xml
+!/testng_*.xml

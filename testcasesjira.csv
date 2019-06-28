@@ -1,0 +1,6 @@
+ATTR-3505,Bubble Chart API - Check the meta data ,attrqa.optimusprime.Mar19Release.api.Test_Optimus_BubbleChart
+ATTR-3504,Bubble Chart API - Check with wrong query parameter,attrqa.optimusprime.Mar19Release.api.Test_Optimus_BubbleChart
+ATTR-3134,Bubble char API - Check the response with the back-end data ,attrqa.optimusprime.Mar19Release.api.Test_Optimus_BubbleChart
+ATTR-3123,Bubble char API -without authorization token,attrqa.optimusprime.Mar19Release.api.Test_Optimus_BubbleChart
+ATTR-3115,Bubble Chart API - Check the Y axis parameter ,attrqa.optimusprime.Mar19Release.api.Test_Optimus_BubbleChart
+ATTR-980,UI Left Bar Navigation - Drop Down,Spira980

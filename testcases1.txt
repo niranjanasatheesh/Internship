@@ -1,0 +1,51 @@
+ATTR-3505,Bubble Chart API - Check the meta data ,attrqa.optimusprime.Mar19Release.api.Test_Optimus_BubbleChart
+ATTR-3504,Bubble Chart API - Check with wrong query parameter,attrqa.optimusprime.Mar19Release.api.Test_Optimus_BubbleChart
+ATTR-3134,Bubble char API - Check the response with the back-end data ,attrqa.optimusprime.Mar19Release.api.Test_Optimus_BubbleChart
+ATTR-3123,Bubble char API -without authorization token,attrqa.optimusprime.Mar19Release.api.Test_Optimus_BubbleChart
+ATTR-3115,Bubble Chart API - Check the Y axis parameter ,attrqa.optimusprime.Mar19Release.api.Test_Optimus_BubbleChart
+ATTR-1639,The status of the batch api call for invalid input,attrqa.pii.Mar19Release.api.Test_PII_BatchAPI
+ATTR-1637,Verify field wise quality calculation logic,attrqa.pii.Mar19Release.api.Test_PII_BatchAPI
+ATTR-1636,Field wise quality : USER_ID,attrqa.pii.Mar19Release.api.Test_PII_BatchAPI
+ATTR-1635,Field wise quality : MOBILE_DEVICE_ID,attrqa.pii.Mar19Release.api.Test_PII_BatchAPI
+ATTR-1634,Field wise quality : COUNTRY_CODE,attrqa.pii.Mar19Release.api.Test_PII_BatchAPI
+ATTR-1633,Field wise quality : ZIP,attrqa.pii.Mar19Release.api.Test_PII_BatchAPI
+ATTR-1632,Field wise quality : CITY,attrqa.pii.Mar19Release.api.Test_PII_BatchAPI
+ATTR-1631,Field wise quality : US_STATE,attrqa.pii.Mar19Release.api.Test_PII_BatchAPI
+ATTR-1630,Field wise quality : First Name,attrqa.pii.Mar19Release.api.Test_PII_BatchAPI
+ATTR-1629,Field wise quality : Last Name,attrqa.pii.Mar19Release.api.Test_PII_BatchAPI
+ATTR-1628,Field wise quality : Date of birth,attrqa.pii.Mar19Release.api.Test_PII_BatchAPI
+ATTR-1627,Field wise quality : Email ,attrqa.pii.Mar19Release.api.Test_PII_BatchAPI
+ATTR-1612,Verify the field wise quality ,attrqa.pii.Mar19Release.api.Test_PII_BatchAPI
+ATTR-1611,Exception message for wrong bucket ,attrqa.pii.Mar19Release.api.Test_PII_BatchAPI
+ATTR-1610,Exception message for wrong key,attrqa.pii.Mar19Release.api.Test_PII_BatchAPI
+ATTR-1474,Verify with a test file having additional columns ,attrqa.pii.Mar19Release.api.Test_PII_BatchAPI
+ATTR-1191,Verify the output schema of the hashing api call,attrqa.pii.Mar19Release.api.Test_PII_BatchAPI
+ATTR-1189,Check whether the  leading zeroes of the phone number is removed ,attrqa.pii.Mar19Release.api.Test_PII_BatchAPI
+ATTR-1188,Exception if any required field is missing,attrqa.pii.Mar19Release.api.Test_PII_BatchAPI
+ATTR-1172,Exception message if the file is not present,attrqa.pii.Mar19Release.api.Test_PII_BatchAPI
+ATTR-1162,Performance Testing of batch api ,attrqa.pii.Mar19Release.api.Test_PII_BatchAPI
+ATTR-1157,Test file is not consistent  ,attrqa.pii.Mar19Release.api.Test_PII_BatchAPI
+ATTR-1156,Hashing if data is missing ,attrqa.pii.Mar19Release.api.Test_PII_BatchAPI
+ATTR-1155,Data with invalid email address ,attrqa.pii.Mar19Release.api.Test_PII_BatchAPI
+ATTR-1154,Verify whether the trimming and convert to lower case is working fine,attrqa.pii.Mar19Release.api.Test_PII_BatchAPI
+ATTR-1136,Transform Birth date to DOBY DOBM &DOBD,attrqa.pii.Mar19Release.api.Test_PII_BatchAPI
+ATTR-1131,Verify with multiple rows of data ,attrqa.pii.Mar19Release.api.Test_PII_BatchAPI
+ATTR-1130,Verify the response of batch api call without giving the query parameters ,attrqa.pii.Mar19Release.api.Test_PII_BatchAPI
+ATTR-1128,Verify the response of batch api call,attrqa.pii.Mar19Release.api.Test_PII_BatchAPI
+ATTR-1080,Verify the data after hashing ,attrqa.pii.Mar19Release.api.Test_PII_BatchAPI
+ATTR-1009,EXTERN_ID : Normalization for FB requirements,attrqa.pii.Mar19Release.api.Test_PII_BatchAPI
+ATTR-1008,Mobile advertiser id : Normalization for FB requirements,attrqa.pii.Mar19Release.api.Test_PII_BatchAPI
+ATTR-1006,Country code : Normalization for FB requirements,attrqa.pii.Mar19Release.api.Test_PII_BatchAPI
+ATTR-1004,Zip code : Normalization for FB requirements,attrqa.pii.Mar19Release.api.Test_PII_BatchAPI
+ATTR-1002,City : Normalization for FB requirements,attrqa.pii.Mar19Release.api.Test_PII_BatchAPI
+ATTR-1001,U.S. States : Normalization for FB requirements,attrqa.pii.Mar19Release.api.Test_PII_BatchAPI
+ATTR-1000,First Initial : Normalization for FB requirements,attrqa.pii.Mar19Release.api.Test_PII_BatchAPI
+ATTR-999,Last and First names : Normalization for FB requirements,attrqa.pii.Mar19Release.api.Test_PII_BatchAPI
+ATTR-996,Birthday :Normalization for FB requirements,attrqa.pii.Mar19Release.api.Test_PII_BatchAPI
+ATTR-995,Birth Month : Normalization for FB requirements,attrqa.pii.Mar19Release.api.Test_PII_BatchAPI
+ATTR-994,Birth Year : Normalization for FB requirements,attrqa.pii.Mar19Release.api.Test_PII_BatchAPI
+ATTR-992,Gender : Normalization for FB requirements,attrqa.pii.Mar19Release.api.Test_PII_BatchAPI
+ATTR-990,Phone number : Normalization for FB requirements,attrqa.pii.Mar19Release.api.Test_PII_BatchAPI
+ATTR-986,Email : Normalization for FB requirements,attrqa.pii.Mar19Release.api.Test_PII_BatchAPI
+ATTR-981,Load csv file from S3 location,attrqa.pii.Mar19Release.api.Test_PII_BatchAPI
+ATTR-980,UI Left Bar Navigation - Drop Down,Spira980

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="SuiteName">
+    <!--  <test name="InvalidToken">-->
+    <!--    <parameter name="authToken" value="eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJmcmFuay5jYWxsYWhhbkBuaWVsc2VuLmNvbSIsImlzcyI6Im5pZWxzZW4tYW5zd2VycyIsImV4cCI6MTU4NjMwNTc1NSwianRpIjoiNTZmNjlhOWItZWNlZC00MTNjLTgzNDEtNDcwYmNhZmU5ZDIxIn0.nChzywNGJPuwae37h3DaiLOlqviph38Jb7nqiwYKaMc"/>-->
+    <!--    <classes>-->
+    <!--      <class name="attrqa.authtoken.AuthorizationToken" />-->
+    <!--      <class name="attrqa.maestro.Mar19Release.api.Test_Maestro_GetClientV1"/>-->
+    <!--    </classes>-->
+    <!--  </test> &lt;!&ndash; Test &ndash;&gt;-->
+    <test  name="ValidToken">
+<!--        <parameter name="authToken" value="eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJmcmFuay5jYWxsYWhhbkBuaWVsc2VuLmNvbSIsImlzcyI6Im5pZWxzZW4tYW5zd2VycyIsImV4cCI6MTU4NjMwNTc1NSwianRpIjoiNTZmNjlhOWItZWNlZC00MTNjLTgzNDEtNDcwYmNhZmU5ZDIxIn0.nChzywNGJPuwae37h3DaiLOlqviph38Jb7nqiwYKaMc"></parameter>-->
+        <classes>
+            <class name="attrqa.authtoken.AuthorizationToken" />
+                     <class name="attrqa.maestro.Mar19Release.api.Test_Maestro_CreateClientV1"/>
+                     <class name="attrqa.maestro.Mar19Release.api.Test_Maestro_GetClientV1"/>
+                     <class name="attrqa.maestro.Mar19Release.api.Test_Maestro_CreateClientModuleMapping"/>
+                     <class name="attrqa.maestro.Mar19Release.api.Test_Maestro_GetClientModuleMapping"/>
+                     <class name="attrqa.maestro.Mar19Release.api.Test_Maestro_CreateDSConfig"/>
+            <class name="attrqa.maestro.Mar19Release.api.Test_Maestro_GetDSConfig"/>
+<!--            <class name="attrqa.maestro.Mar19Release.api.Test_Maestro_GetBrands"/>-->
+        </classes>
+    </test>
+</suite> <!-- Suite -->

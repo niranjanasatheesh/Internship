@@ -1,0 +1,52 @@
+Issue key,Issue id,Priority,Custom field (Project Category),Summary,Issue Type,Custom field (Sprint End),Custom field (Story Points),Assignee
+ATTR-2143,2691162,Medium,,Verify the data coverage field in the response of the mapping service ,Test,,,avab7001
+ATTR-2142,2691158,Medium,,Verify the date range in the response of mapping service ,Test,,,avab7001
+ATTR-2141,2691157,Medium,,Verify the status of the mapping service response ,Test,,,avab7001
+ATTR-2133,2690896,Medium,,Mapping service api with different id-Space,Test,,,avab7001
+ATTR-2131,2690886,Medium,,Verify the mapping service api call,Test,,,avab7001
+ATTR-1639,2591695,Medium,,The status of the batch api call for invalid input,Test,,,avab7001
+ATTR-1637,2591682,Medium,,Verify field wise quality calculation logic,Test,,,avab7001
+ATTR-1636,2591663,Medium,,Field wise quality : USER_ID,Test,,,avab7001
+ATTR-1635,2591659,Medium,,Field wise quality : MOBILE_DEVICE_ID,Test,,,avab7001
+ATTR-1634,2591653,Medium,,Field wise quality : COUNTRY_CODE,Test,,,avab7001
+ATTR-1633,2591639,Medium,,Field wise quality : ZIP,Test,,,avab7001
+ATTR-1632,2591628,Medium,,Field wise quality : CITY,Test,,,avab7001
+ATTR-1631,2591625,Medium,,Field wise quality : US_STATE,Test,,,avab7001
+ATTR-1630,2591622,Medium,,Field wise quality : First Name,Test,,,avab7001
+ATTR-1629,2591618,Medium,,Field wise quality : Last Name,Test,,,avab7001
+ATTR-1628,2591606,Medium,,Field wise quality : Date of birth,Test,,,avab7001
+ATTR-1627,2591494,Medium,,Field wise quality : Email ,Test,,,avab7001
+ATTR-1612,2590787,Medium,,Verify the field wise quality ,Test,,,avab7001
+ATTR-1611,2590771,Medium,,Exception message for wrong bucket ,Test,,,avab7001
+ATTR-1610,2590744,Medium,,Exception message for wrong key,Test,,,avab7001
+ATTR-1474,2571008,Medium,,Verify with a test file having additional columns ,Test,,,avab7001
+ATTR-1191,2544142,Medium,,Verify the output schema of the hashing api call,Test,,,avab7001
+ATTR-1189,2544121,Medium,,Check whether the  leading zeroes of the phone number is removed ,Test,,,avab7001
+ATTR-1188,2543595,Medium,,Exception if any required field is missing,Test,,,avab7001
+ATTR-1172,2543041,Medium,,Exception message if the file is not present,Test,,,avab7001
+ATTR-1162,2541342,Medium,,Performance Testing of batch api ,Test,,,avab7001
+ATTR-1157,2540966,Medium,,Test file is not consistent  ,Test,,,avab7001
+ATTR-1156,2540963,Medium,,Hashing if data is missing ,Test,,,avab7001
+ATTR-1155,2540949,Medium,,Data with invalid email address ,Test,,,avab7001
+ATTR-1154,2540939,Medium,,Verify whether the trimming and convert to lower case is working fine,Test,,,avab7001
+ATTR-1136,2537508,Medium,,Transform Birth date to DOBY DOBM &DOBD,Test,,,avab7001
+ATTR-1131,2537487,Medium,,Verify with multiple rows of data ,Test,,,avab7001
+ATTR-1130,2537173,Medium,,Verify the response of batch api call without giving the query parameters ,Test,,,avab7001
+ATTR-1129,2537170,Medium,,Verify the response of batch api call,Test,,,avab7001
+ATTR-1128,2537169,Medium,,Verify the response of batch api call,Test,,,avab7001
+ATTR-1080,2534240,Medium,,Verify the data after hashing ,Test,,,avab7001
+ATTR-1009,2527962,Medium,,EXTERN_ID : Normalization for FB requirements,Test,,,avab7001
+ATTR-1008,2527957,Medium,,Mobile advertiser id : Normalization for FB requirements,Test,,,avab7001
+ATTR-1006,2527925,Medium,,Country code : Normalization for FB requirements,Test,,,avab7001
+ATTR-1004,2527920,Medium,,Zip code : Normalization for FB requirements,Test,,,avab7001
+ATTR-1002,2527915,Medium,,City : Normalization for FB requirements,Test,,,avab7001
+ATTR-1001,2527913,Medium,,U.S. States : Normalization for FB requirements,Test,,,avab7001
+ATTR-1000,2527911,Medium,,First Initial : Normalization for FB requirements,Test,,,avab7001
+ATTR-999,2527908,Medium,,Last and First names : Normalization for FB requirements,Test,,,avab7001
+ATTR-996,2527141,Medium,,Birthday :Normalization for FB requirements,Test,,,avab7001
+ATTR-995,2527139,Medium,,Birth Month : Normalization for FB requirements,Test,,,avab7001
+ATTR-994,2527133,Medium,,Birth Year : Normalization for FB requirements,Test,,,avab7001
+ATTR-992,2527130,Medium,,Gender : Normalization for FB requirements,Test,,,avab7001
+ATTR-990,2527129,Medium,,Phone number : Normalization for FB requirements,Test,,,avab7001
+ATTR-986,2527111,Medium,,Email : Normalization for FB requirements,Test,,,avab7001
+ATTR-981,2526696,High,,Load csv file from S3 location,Test,,,avab7001

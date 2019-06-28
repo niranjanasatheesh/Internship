@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="SuiteName">
+  <test  name="ValidToken">
+    <classes>
+<!--      <class name="attrqa.authtoken.AuthorizationToken" />-->
+      <class name="attrqa.maestro.Mar19Release.api.Test_Maestro_CreateClientV1"/>
+      <class name="attrqa.maestro.Mar19Release.api.Test_Maestro_GetClientV1"/>
+      <class name="attrqa.maestro.Mar19Release.api.Test_Maestro_CreateClientModuleMapping"/>
+      <class name="attrqa.maestro.Mar19Release.api.Test_Maestro_GetClientModuleMapping"/>
+      <class name="attrqa.maestro.Mar19Release.api.Test_Maestro_CreateDSConfig"/>
+      <class name="attrqa.maestro.Mar19Release.api.Test_Maestro_GetDSConfig"/>
+    </classes>
+  </test>
+</suite> <!-- Suite -->

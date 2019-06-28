@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="SuiteName">
+    <test  name="ValidToken">
+        <classes>
+            <class name="attrqa.authtoken.AuthorizationToken_MIE" />
+
+            <!--<class name="attrqa.mie.Mar19Release.AuthorizationV2.Test_MIE_GetUserClients"/>
+            <class name="attrqa.mie.Mar19Release.AuthorizationV2.Test_MIE_GetClientBrands"/>-->
+
+            <class name="attrqa.mie.Mar19Release.Brands.Test_MIE_UploadBrand"/>
+            <!--<class name="attrqa.mie.Mar19Release.Brands.Test_MIE_GetList"/>
+            <class name="attrqa.mie.Mar19Release.Brands.Test_MIE_GetBrands"/>
+            <class name="attrqa.mie.Mar19Release.Brands.Test_MIE_ManageBrand"/>
+            <class name="attrqa.mie.Mar19Release.Brands.Test_MIE_UpdateBrandStatus"/>-->
+            <class name="attrqa.mie.Mar19Release.Brands.Test_MIE_InsertData"/>
+
+        </classes>
+    </test>
+</suite> <!-- Suite -->

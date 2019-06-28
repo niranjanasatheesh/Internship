@@ -1,0 +1,42 @@
+version: 0.2
+
+#env:
+  #variables:
+     # key: "value"
+     # key: "value"
+  #parameter-store:
+     # key: "value"
+     # key: "value"
+
+phases:
+  install:
+    commands:
+      # -
+       - wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+       - sudo sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list'
+       - sudo apt-get update
+       - sudo apt-get install -y google-chrome-stable
+       - google-chrome --version
+  #pre_build:
+    #commands:
+      # - command
+      # - command
+  build:
+    commands:
+       - chmod 777 chromedriver
+       - mvn clean test --debug -DsuiteXmlFile=testng.xml -Dbrowser=chrome -Dheadless=true
+  #post_build:
+    #commands:
+      # - command
+      # - command
+artifacts:
+  files:
+     - ./reports/*
+     - ./reports/screenshots/*
+    # - location
+  name: $(date +%Y-%m-%d)
+  #discard-paths: yes
+  #base-directory: location
+cache:
+  paths:
+     - '/root/.m2/**/*'

@@ -1,0 +1,38 @@
+version: 0.2
+
+#env:
+  #variables:
+     # key: "value"
+     # key: "value"
+  #parameter-store:
+     # key: "value"
+     # key: "value"
+
+phases:
+  install:
+    commands:
+       - apt-get update && apt-get install -y firefox wget
+       - export FIREFOX_BIN=/usr/bin/firefox
+  #pre_build:
+    #commands:
+      # - command
+      # - command
+  build:
+    commands:
+       - chmod 777 geckodriver
+       - mvn clean test -DsuiteXmlFile=testng.xml -Dbrowser=firefox
+  #post_build:
+    #commands:
+      # - command
+      # - command
+artifacts:
+  files:
+     - ./reports/*
+     - ./reports/screenshots/*
+    # - location
+  #name: $(date +%Y-%m-%d)
+  #discard-paths: yes
+  #base-directory: location
+cache:
+  paths:
+     - '/root/.m2/**/*'
