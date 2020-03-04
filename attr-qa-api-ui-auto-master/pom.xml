@@ -14,7 +14,7 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <jsonunit.version>2.2.0</jsonunit.version>
     <googleclient.version>1.28.0</googleclient.version>
-    <jackson.version>2.9.8</jackson.version>
+    <jackson.version>2.10.3</jackson.version>
     <sl4j.version>1.7.5</sl4j.version>
   </properties>
 
